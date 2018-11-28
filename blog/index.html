@@ -1,27 +1,12 @@
 ---
 layout: default
-title: El Blog de Dainerys
+title: Dainerys's Blog
 ---
-<head>
-	<nav>
-    			<a href="/">Home</a>
-	        	<a href="/about.html">About</a>
-        		<a href="/cv.html">CV</a>
-        		<a href="/blog/index.html">Blog</a>
-    	</nav>
-	</head>
+<h1>{{ page.title }}</h1>
+<ul class="posts">
 
-<h1>El blog de Dainerys </h1>
-
-	<h3>Elena Garro en el aniversario de todas sus vidas</h3>
-	<ul class="posts">
-
-	 <a href="2018-10-23-Elena-Garro.html"> This post was written in Spanish.</a> It is dedicated to analyze the work of the Mexican writer Elena Garro, who died in 1998. </li>
-	 </ul>
-
-
-<h3>Planos narrativos curvilíneos: Borges y Cortázar</h3>
-	<ul class="posts">
-
-	 <a href="2018-10-22-Borges-Cortazar.html"> This post was written in Spanish.</a> It is dedicated to analyze the influences of mathematical theories on Julio Cortázar and Jorge Luis Borges' creations. </li>
-	 </ul>
+  {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+  {% endfor %}
+    
+</ul>
