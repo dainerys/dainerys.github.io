@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Digital Humanities, University of Miami</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-    			<a href="/">Home</a>
-	        	<a href="/about">About</a>
-        		<a href="/cv">CV</a>
-        		<a href="/blog">Blog</a>
-    		
-		</nav>
-		<div class="container">
+  <head>
+    <title>{{ page.title }}</title>
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+  
+  </head>
 
-			<div class="blurb">
-        		<h1>Hi there, I'm Dainerys Machado!</h1>
-				<p>This is a project form my <em>DH Practicum</em> class. <a href="/about">More information will be uploaded in the coming days ...</a></p>
-    		
-		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:dmachado@miami.edu">email</a></li>
-        		<li><a href="https://github.io/dainerys">github.io/dainerys</a></li>
-			</ul>
-		</footer>
-	</body>
+
+  <body>
+    <nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/cv">CV</a></li>
+<li><a href="/projects">Projects</a></li>
+<li><a href="/blog">Blog</a></li>
+</ul>
+    </nav>
+<div class="container">
+
+  {{ content }}
+
+</div>
+  
+  <footer>
+   <ul>
+   <li><a href="mailto:dmachado@miami.edu">email</a></li>
+   <li><a href="https://github.com/dainerys">github.com/dainerys</a></li>
+   </ul>
+  </footer>
+  </body>
+
 </html>
